@@ -20,14 +20,17 @@ const EventSchema = new Schema({
     type: Date,
     default: Date.now,
   },
-  picture:{
-    name:{
-      type:String
+  picture: {
+    name: {
+      type: String
     },
-    data:{
-      type:String
+    data: {
+      type: String
     }
-  }
+  },
+  formurl: {
+    type: String
+  },
 });
 
 module.exports = Event = mongoose.model("Event", EventSchema);
